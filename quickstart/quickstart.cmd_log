@@ -1,0 +1,53 @@
+xst -intstyle ise -ifn "/home/thiago/FPGA/quickstart/quickstart.xst" -ofn "/home/thiago/FPGA/quickstart/quickstart.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/thiago/Downloads/BPC3003-Papilio_One-general.ucf -p xc3s500e-fg320-4 quickstart.ngc quickstart.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/thiago/Downloads/BPC3003-Papilio_One-general.ucf -p xc3s500e-fg320-4 quickstart.ngc quickstart.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/thiago/Downloads/BPC3003-Papilio_One-general.ucf -p xc3s500e-fg320-4 quickstart.ngc quickstart.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/thiago/Downloads/BPC3003-Papilio_One-general.ucf -p xc3s500e-fg320-4 quickstart.ngc quickstart.ngd  
+xst -intstyle ise -ifn "/home/thiago/FPGA/quickstart/quickstart.xst" -ofn "/home/thiago/FPGA/quickstart/quickstart.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/thiago/Downloads/BPC3003-Papilio_One-general.ucf -p xc3s500e-fg320-4 quickstart.ngc quickstart.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc /home/thiago/Downloads/BPC3003-Papilio_One-general.ucf -p xc3s500e-fg320-4 quickstart.ngc quickstart.ngd  
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc /home/thiago/Downloads/BPC3003-Papilio_One-general.ucf -p xc3s500e-fg320-4 quickstart.ngc quickstart.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o quickstart_map.ncd quickstart.ngd quickstart.pcf 
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o quickstart_map.ncd quickstart.ngd quickstart.pcf 
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o quickstart_map.ncd quickstart.ngd quickstart.pcf 
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o quickstart_map.ncd quickstart.ngd quickstart.pcf 
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o quickstart_map.ncd quickstart.ngd quickstart.pcf 
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o quickstart_map.ncd quickstart.ngd quickstart.pcf 
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o quickstart_map.ncd quickstart.ngd quickstart.pcf 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc /home/thiago/Downloads/BPC3003-Papilio_One-general.ucf -p xc3s500e-fg320-4 quickstart.ngc quickstart.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o quickstart_map.ncd quickstart.ngd quickstart.pcf 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc /home/thiago/Downloads/BPC3003-Papilio_One-general.ucf -p xc3s500e-fg320-4 quickstart.ngc quickstart.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o quickstart_map.ncd quickstart.ngd quickstart.pcf 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc /home/thiago/Downloads/BPC3003-Papilio_One-general.ucf -p xc3s500e-fg320-4 quickstart.ngc quickstart.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o quickstart_map.ncd quickstart.ngd quickstart.pcf 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc /home/thiago/Downloads/BPC3003-Papilio_One-general.ucf -p xc3s500e-fg320-4 quickstart.ngc quickstart.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o quickstart_map.ncd quickstart.ngd quickstart.pcf 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc /home/thiago/Downloads/BPC3003-Papilio_One-general.ucf -p xc3s500e-fg320-4 quickstart.ngc quickstart.ngd  
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc /home/thiago/Downloads/BPC3003-Papilio_One-general.ucf -p xc3s500e-fg320-4 quickstart.ngc quickstart.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o quickstart_map.ncd quickstart.ngd quickstart.pcf 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc /home/thiago/Downloads/BPC3003-Papilio_One-general.ucf -p xc3s500e-fg320-4 quickstart.ngc quickstart.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o quickstart_map.ncd quickstart.ngd quickstart.pcf 
+xst -intstyle ise -ifn "/home/thiago/FPGA/quickstart/quickstart.xst" -ofn "/home/thiago/FPGA/quickstart/quickstart.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc /home/thiago/Downloads/BPC3003-Papilio_One-general.ucf -p xc3s500e-vq100-4 quickstart.ngc quickstart.ngd  
+map -intstyle ise -p xc3s500e-vq100-4 -cm area -ir off -pr off -c 100 -o quickstart_map.ncd quickstart.ngd quickstart.pcf 
+par -w -intstyle ise -ol high -t 1 quickstart_map.ncd quickstart.ncd quickstart.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml quickstart.twx quickstart.ncd -o quickstart.twr quickstart.pcf 
+bitgen -intstyle ise -f quickstart.ut quickstart.ncd 
+xst -intstyle ise -ifn "/home/thiago/FPGA/quickstart/quickstart.xst" -ofn "/home/thiago/FPGA/quickstart/quickstart.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc /home/thiago/Downloads/BPC3003-Papilio_One-general.ucf -p xc3s500e-vq100-4 quickstart.ngc quickstart.ngd  
+map -intstyle ise -p xc3s500e-vq100-4 -cm area -ir off -pr off -c 100 -o quickstart_map.ncd quickstart.ngd quickstart.pcf 
+par -w -intstyle ise -ol high -t 1 quickstart_map.ncd quickstart.ncd quickstart.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml quickstart.twx quickstart.ncd -o quickstart.twr quickstart.pcf 
+bitgen -intstyle ise -f quickstart.ut quickstart.ncd 
+xst -intstyle ise -ifn "/home/thiago/FPGA/quickstart/quickstart.xst" -ofn "/home/thiago/FPGA/quickstart/quickstart.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc /home/thiago/Downloads/BPC3003-Papilio_One-general.ucf -p xc3s500e-vq100-4 quickstart.ngc quickstart.ngd  
+map -intstyle ise -p xc3s500e-vq100-4 -cm area -ir off -pr off -c 100 -o quickstart_map.ncd quickstart.ngd quickstart.pcf 
+par -w -intstyle ise -ol high -t 1 quickstart_map.ncd quickstart.ncd quickstart.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml quickstart.twx quickstart.ncd -o quickstart.twr quickstart.pcf 
+bitgen -intstyle ise -f quickstart.ut quickstart.ncd 
+xst -intstyle ise -ifn "/home/thiago/FPGA/quickstart/quickstart.xst" -ofn "/home/thiago/FPGA/quickstart/quickstart.syr" 
+ngdbuild -intstyle ise -dd _ngo -aul -nt timestamp -uc /home/thiago/Downloads/BPC3003-Papilio_One-general.ucf -p xc3s500e-vq100-4 quickstart.ngc quickstart.ngd  
+map -intstyle ise -p xc3s500e-vq100-4 -cm area -ir off -pr off -c 100 -o quickstart_map.ncd quickstart.ngd quickstart.pcf 
+par -w -intstyle ise -ol high -t 1 quickstart_map.ncd quickstart.ncd quickstart.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml quickstart.twx quickstart.ncd -o quickstart.twr quickstart.pcf 
+bitgen -intstyle ise -f quickstart.ut quickstart.ncd 

@@ -1,0 +1,7 @@
+V3 3
+FL /home/thiago/FPGA/quickstart/quickstart.vhd 2017/05/07.15:51:35 P.20131013
+EN work/quickstart 1494183129 FL /home/thiago/FPGA/quickstart/quickstart.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/quickstart/Behavioral 1494183130 \
+      FL /home/thiago/FPGA/quickstart/quickstart.vhd EN work/quickstart 1494183129

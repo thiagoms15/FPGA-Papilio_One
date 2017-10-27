@@ -1,0 +1,1018 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+/home/thiago/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/trce -intstyle ise -v 3
+-s 4 -n 3 -fastpaths -xml quickstart.twx quickstart.ncd -o quickstart.twr
+quickstart.pcf
+
+Design file:              quickstart.ncd
+Physical constraint file: quickstart.pcf
+Device,package,speed:     xc3s500e,vq100,-4 (PRODUCTION 1.27 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+================================================================================
+Timing constraint: NET "clk_BUFGP/IBUFG" PERIOD = 31.25 ns HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 666 paths analyzed, 88 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   5.104ns.
+--------------------------------------------------------------------------------
+
+Paths for end point counter_35 (SLICE_X45Y48.CIN), 34 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     26.146ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               counter_0 (FF)
+  Destination:          counter_35 (FF)
+  Requirement:          31.250ns
+  Data Path Delay:      5.104ns (Levels of Logic = 18)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 31.250ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: counter_0 to counter_35
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X45Y31.XQ      Tcko                  0.591   counter<0>
+                                                       counter_0
+    SLICE_X45Y31.F2      net (fanout=1)        0.461   counter<0>
+    SLICE_X45Y31.COUT    Topcyf                1.162   counter<0>
+                                                       Mcount_counter_lut<0>_INV_0
+                                                       Mcount_counter_cy<0>
+                                                       Mcount_counter_cy<1>
+    SLICE_X45Y32.CIN     net (fanout=1)        0.000   Mcount_counter_cy<1>
+    SLICE_X45Y32.COUT    Tbyp                  0.118   counter<2>
+                                                       Mcount_counter_cy<2>
+                                                       Mcount_counter_cy<3>
+    SLICE_X45Y33.CIN     net (fanout=1)        0.000   Mcount_counter_cy<3>
+    SLICE_X45Y33.COUT    Tbyp                  0.118   counter<4>
+                                                       Mcount_counter_cy<4>
+                                                       Mcount_counter_cy<5>
+    SLICE_X45Y34.CIN     net (fanout=1)        0.000   Mcount_counter_cy<5>
+    SLICE_X45Y34.COUT    Tbyp                  0.118   counter<6>
+                                                       Mcount_counter_cy<6>
+                                                       Mcount_counter_cy<7>
+    SLICE_X45Y35.CIN     net (fanout=1)        0.000   Mcount_counter_cy<7>
+    SLICE_X45Y35.COUT    Tbyp                  0.118   counter<8>
+                                                       Mcount_counter_cy<8>
+                                                       Mcount_counter_cy<9>
+    SLICE_X45Y36.CIN     net (fanout=1)        0.000   Mcount_counter_cy<9>
+    SLICE_X45Y36.COUT    Tbyp                  0.118   counter<10>
+                                                       Mcount_counter_cy<10>
+                                                       Mcount_counter_cy<11>
+    SLICE_X45Y37.CIN     net (fanout=1)        0.000   Mcount_counter_cy<11>
+    SLICE_X45Y37.COUT    Tbyp                  0.118   counter<12>
+                                                       Mcount_counter_cy<12>
+                                                       Mcount_counter_cy<13>
+    SLICE_X45Y38.CIN     net (fanout=1)        0.000   Mcount_counter_cy<13>
+    SLICE_X45Y38.COUT    Tbyp                  0.118   counter<14>
+                                                       Mcount_counter_cy<14>
+                                                       Mcount_counter_cy<15>
+    SLICE_X45Y39.CIN     net (fanout=1)        0.000   Mcount_counter_cy<15>
+    SLICE_X45Y39.COUT    Tbyp                  0.118   counter<16>
+                                                       Mcount_counter_cy<16>
+                                                       Mcount_counter_cy<17>
+    SLICE_X45Y40.CIN     net (fanout=1)        0.000   Mcount_counter_cy<17>
+    SLICE_X45Y40.COUT    Tbyp                  0.118   counter<18>
+                                                       Mcount_counter_cy<18>
+                                                       Mcount_counter_cy<19>
+    SLICE_X45Y41.CIN     net (fanout=1)        0.000   Mcount_counter_cy<19>
+    SLICE_X45Y41.COUT    Tbyp                  0.118   counter<20>
+                                                       Mcount_counter_cy<20>
+                                                       Mcount_counter_cy<21>
+    SLICE_X45Y42.CIN     net (fanout=1)        0.000   Mcount_counter_cy<21>
+    SLICE_X45Y42.COUT    Tbyp                  0.118   counter<22>
+                                                       Mcount_counter_cy<22>
+                                                       Mcount_counter_cy<23>
+    SLICE_X45Y43.CIN     net (fanout=1)        0.000   Mcount_counter_cy<23>
+    SLICE_X45Y43.COUT    Tbyp                  0.118   counter<24>
+                                                       Mcount_counter_cy<24>
+                                                       Mcount_counter_cy<25>
+    SLICE_X45Y44.CIN     net (fanout=1)        0.000   Mcount_counter_cy<25>
+    SLICE_X45Y44.COUT    Tbyp                  0.118   counter<26>
+                                                       Mcount_counter_cy<26>
+                                                       Mcount_counter_cy<27>
+    SLICE_X45Y45.CIN     net (fanout=1)        0.000   Mcount_counter_cy<27>
+    SLICE_X45Y45.COUT    Tbyp                  0.118   counter<28>
+                                                       Mcount_counter_cy<28>
+                                                       Mcount_counter_cy<29>
+    SLICE_X45Y46.CIN     net (fanout=1)        0.000   Mcount_counter_cy<29>
+    SLICE_X45Y46.COUT    Tbyp                  0.118   counter<30>
+                                                       Mcount_counter_cy<30>
+                                                       Mcount_counter_cy<31>
+    SLICE_X45Y47.CIN     net (fanout=1)        0.000   Mcount_counter_cy<31>
+    SLICE_X45Y47.COUT    Tbyp                  0.118   counter<32>
+                                                       Mcount_counter_cy<32>
+                                                       Mcount_counter_cy<33>
+    SLICE_X45Y48.CIN     net (fanout=1)        0.000   Mcount_counter_cy<33>
+    SLICE_X45Y48.CLK     Tcinck                1.002   counter<34>
+                                                       Mcount_counter_cy<34>
+                                                       Mcount_counter_xor<35>
+                                                       counter_35
+    -------------------------------------------------  ---------------------------
+    Total                                      5.104ns (4.643ns logic, 0.461ns route)
+                                                       (91.0% logic, 9.0% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     26.239ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               counter_1 (FF)
+  Destination:          counter_35 (FF)
+  Requirement:          31.250ns
+  Data Path Delay:      5.011ns (Levels of Logic = 18)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 31.250ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: counter_1 to counter_35
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X45Y31.YQ      Tcko                  0.587   counter<0>
+                                                       counter_1
+    SLICE_X45Y31.G1      net (fanout=1)        0.533   counter<1>
+    SLICE_X45Y31.COUT    Topcyg                1.001   counter<0>
+                                                       counter<1>_rt
+                                                       Mcount_counter_cy<1>
+    SLICE_X45Y32.CIN     net (fanout=1)        0.000   Mcount_counter_cy<1>
+    SLICE_X45Y32.COUT    Tbyp                  0.118   counter<2>
+                                                       Mcount_counter_cy<2>
+                                                       Mcount_counter_cy<3>
+    SLICE_X45Y33.CIN     net (fanout=1)        0.000   Mcount_counter_cy<3>
+    SLICE_X45Y33.COUT    Tbyp                  0.118   counter<4>
+                                                       Mcount_counter_cy<4>
+                                                       Mcount_counter_cy<5>
+    SLICE_X45Y34.CIN     net (fanout=1)        0.000   Mcount_counter_cy<5>
+    SLICE_X45Y34.COUT    Tbyp                  0.118   counter<6>
+                                                       Mcount_counter_cy<6>
+                                                       Mcount_counter_cy<7>
+    SLICE_X45Y35.CIN     net (fanout=1)        0.000   Mcount_counter_cy<7>
+    SLICE_X45Y35.COUT    Tbyp                  0.118   counter<8>
+                                                       Mcount_counter_cy<8>
+                                                       Mcount_counter_cy<9>
+    SLICE_X45Y36.CIN     net (fanout=1)        0.000   Mcount_counter_cy<9>
+    SLICE_X45Y36.COUT    Tbyp                  0.118   counter<10>
+                                                       Mcount_counter_cy<10>
+                                                       Mcount_counter_cy<11>
+    SLICE_X45Y37.CIN     net (fanout=1)        0.000   Mcount_counter_cy<11>
+    SLICE_X45Y37.COUT    Tbyp                  0.118   counter<12>
+                                                       Mcount_counter_cy<12>
+                                                       Mcount_counter_cy<13>
+    SLICE_X45Y38.CIN     net (fanout=1)        0.000   Mcount_counter_cy<13>
+    SLICE_X45Y38.COUT    Tbyp                  0.118   counter<14>
+                                                       Mcount_counter_cy<14>
+                                                       Mcount_counter_cy<15>
+    SLICE_X45Y39.CIN     net (fanout=1)        0.000   Mcount_counter_cy<15>
+    SLICE_X45Y39.COUT    Tbyp                  0.118   counter<16>
+                                                       Mcount_counter_cy<16>
+                                                       Mcount_counter_cy<17>
+    SLICE_X45Y40.CIN     net (fanout=1)        0.000   Mcount_counter_cy<17>
+    SLICE_X45Y40.COUT    Tbyp                  0.118   counter<18>
+                                                       Mcount_counter_cy<18>
+                                                       Mcount_counter_cy<19>
+    SLICE_X45Y41.CIN     net (fanout=1)        0.000   Mcount_counter_cy<19>
+    SLICE_X45Y41.COUT    Tbyp                  0.118   counter<20>
+                                                       Mcount_counter_cy<20>
+                                                       Mcount_counter_cy<21>
+    SLICE_X45Y42.CIN     net (fanout=1)        0.000   Mcount_counter_cy<21>
+    SLICE_X45Y42.COUT    Tbyp                  0.118   counter<22>
+                                                       Mcount_counter_cy<22>
+                                                       Mcount_counter_cy<23>
+    SLICE_X45Y43.CIN     net (fanout=1)        0.000   Mcount_counter_cy<23>
+    SLICE_X45Y43.COUT    Tbyp                  0.118   counter<24>
+                                                       Mcount_counter_cy<24>
+                                                       Mcount_counter_cy<25>
+    SLICE_X45Y44.CIN     net (fanout=1)        0.000   Mcount_counter_cy<25>
+    SLICE_X45Y44.COUT    Tbyp                  0.118   counter<26>
+                                                       Mcount_counter_cy<26>
+                                                       Mcount_counter_cy<27>
+    SLICE_X45Y45.CIN     net (fanout=1)        0.000   Mcount_counter_cy<27>
+    SLICE_X45Y45.COUT    Tbyp                  0.118   counter<28>
+                                                       Mcount_counter_cy<28>
+                                                       Mcount_counter_cy<29>
+    SLICE_X45Y46.CIN     net (fanout=1)        0.000   Mcount_counter_cy<29>
+    SLICE_X45Y46.COUT    Tbyp                  0.118   counter<30>
+                                                       Mcount_counter_cy<30>
+                                                       Mcount_counter_cy<31>
+    SLICE_X45Y47.CIN     net (fanout=1)        0.000   Mcount_counter_cy<31>
+    SLICE_X45Y47.COUT    Tbyp                  0.118   counter<32>
+                                                       Mcount_counter_cy<32>
+                                                       Mcount_counter_cy<33>
+    SLICE_X45Y48.CIN     net (fanout=1)        0.000   Mcount_counter_cy<33>
+    SLICE_X45Y48.CLK     Tcinck                1.002   counter<34>
+                                                       Mcount_counter_cy<34>
+                                                       Mcount_counter_xor<35>
+                                                       counter_35
+    -------------------------------------------------  ---------------------------
+    Total                                      5.011ns (4.478ns logic, 0.533ns route)
+                                                       (89.4% logic, 10.6% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     26.342ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               counter_2 (FF)
+  Destination:          counter_35 (FF)
+  Requirement:          31.250ns
+  Data Path Delay:      4.908ns (Levels of Logic = 17)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 31.250ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: counter_2 to counter_35
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X45Y32.XQ      Tcko                  0.591   counter<2>
+                                                       counter_2
+    SLICE_X45Y32.F3      net (fanout=1)        0.383   counter<2>
+    SLICE_X45Y32.COUT    Topcyf                1.162   counter<2>
+                                                       counter<2>_rt
+                                                       Mcount_counter_cy<2>
+                                                       Mcount_counter_cy<3>
+    SLICE_X45Y33.CIN     net (fanout=1)        0.000   Mcount_counter_cy<3>
+    SLICE_X45Y33.COUT    Tbyp                  0.118   counter<4>
+                                                       Mcount_counter_cy<4>
+                                                       Mcount_counter_cy<5>
+    SLICE_X45Y34.CIN     net (fanout=1)        0.000   Mcount_counter_cy<5>
+    SLICE_X45Y34.COUT    Tbyp                  0.118   counter<6>
+                                                       Mcount_counter_cy<6>
+                                                       Mcount_counter_cy<7>
+    SLICE_X45Y35.CIN     net (fanout=1)        0.000   Mcount_counter_cy<7>
+    SLICE_X45Y35.COUT    Tbyp                  0.118   counter<8>
+                                                       Mcount_counter_cy<8>
+                                                       Mcount_counter_cy<9>
+    SLICE_X45Y36.CIN     net (fanout=1)        0.000   Mcount_counter_cy<9>
+    SLICE_X45Y36.COUT    Tbyp                  0.118   counter<10>
+                                                       Mcount_counter_cy<10>
+                                                       Mcount_counter_cy<11>
+    SLICE_X45Y37.CIN     net (fanout=1)        0.000   Mcount_counter_cy<11>
+    SLICE_X45Y37.COUT    Tbyp                  0.118   counter<12>
+                                                       Mcount_counter_cy<12>
+                                                       Mcount_counter_cy<13>
+    SLICE_X45Y38.CIN     net (fanout=1)        0.000   Mcount_counter_cy<13>
+    SLICE_X45Y38.COUT    Tbyp                  0.118   counter<14>
+                                                       Mcount_counter_cy<14>
+                                                       Mcount_counter_cy<15>
+    SLICE_X45Y39.CIN     net (fanout=1)        0.000   Mcount_counter_cy<15>
+    SLICE_X45Y39.COUT    Tbyp                  0.118   counter<16>
+                                                       Mcount_counter_cy<16>
+                                                       Mcount_counter_cy<17>
+    SLICE_X45Y40.CIN     net (fanout=1)        0.000   Mcount_counter_cy<17>
+    SLICE_X45Y40.COUT    Tbyp                  0.118   counter<18>
+                                                       Mcount_counter_cy<18>
+                                                       Mcount_counter_cy<19>
+    SLICE_X45Y41.CIN     net (fanout=1)        0.000   Mcount_counter_cy<19>
+    SLICE_X45Y41.COUT    Tbyp                  0.118   counter<20>
+                                                       Mcount_counter_cy<20>
+                                                       Mcount_counter_cy<21>
+    SLICE_X45Y42.CIN     net (fanout=1)        0.000   Mcount_counter_cy<21>
+    SLICE_X45Y42.COUT    Tbyp                  0.118   counter<22>
+                                                       Mcount_counter_cy<22>
+                                                       Mcount_counter_cy<23>
+    SLICE_X45Y43.CIN     net (fanout=1)        0.000   Mcount_counter_cy<23>
+    SLICE_X45Y43.COUT    Tbyp                  0.118   counter<24>
+                                                       Mcount_counter_cy<24>
+                                                       Mcount_counter_cy<25>
+    SLICE_X45Y44.CIN     net (fanout=1)        0.000   Mcount_counter_cy<25>
+    SLICE_X45Y44.COUT    Tbyp                  0.118   counter<26>
+                                                       Mcount_counter_cy<26>
+                                                       Mcount_counter_cy<27>
+    SLICE_X45Y45.CIN     net (fanout=1)        0.000   Mcount_counter_cy<27>
+    SLICE_X45Y45.COUT    Tbyp                  0.118   counter<28>
+                                                       Mcount_counter_cy<28>
+                                                       Mcount_counter_cy<29>
+    SLICE_X45Y46.CIN     net (fanout=1)        0.000   Mcount_counter_cy<29>
+    SLICE_X45Y46.COUT    Tbyp                  0.118   counter<30>
+                                                       Mcount_counter_cy<30>
+                                                       Mcount_counter_cy<31>
+    SLICE_X45Y47.CIN     net (fanout=1)        0.000   Mcount_counter_cy<31>
+    SLICE_X45Y47.COUT    Tbyp                  0.118   counter<32>
+                                                       Mcount_counter_cy<32>
+                                                       Mcount_counter_cy<33>
+    SLICE_X45Y48.CIN     net (fanout=1)        0.000   Mcount_counter_cy<33>
+    SLICE_X45Y48.CLK     Tcinck                1.002   counter<34>
+                                                       Mcount_counter_cy<34>
+                                                       Mcount_counter_xor<35>
+                                                       counter_35
+    -------------------------------------------------  ---------------------------
+    Total                                      4.908ns (4.525ns logic, 0.383ns route)
+                                                       (92.2% logic, 7.8% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point counter_33 (SLICE_X45Y47.CIN), 32 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     26.264ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               counter_0 (FF)
+  Destination:          counter_33 (FF)
+  Requirement:          31.250ns
+  Data Path Delay:      4.986ns (Levels of Logic = 17)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 31.250ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: counter_0 to counter_33
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X45Y31.XQ      Tcko                  0.591   counter<0>
+                                                       counter_0
+    SLICE_X45Y31.F2      net (fanout=1)        0.461   counter<0>
+    SLICE_X45Y31.COUT    Topcyf                1.162   counter<0>
+                                                       Mcount_counter_lut<0>_INV_0
+                                                       Mcount_counter_cy<0>
+                                                       Mcount_counter_cy<1>
+    SLICE_X45Y32.CIN     net (fanout=1)        0.000   Mcount_counter_cy<1>
+    SLICE_X45Y32.COUT    Tbyp                  0.118   counter<2>
+                                                       Mcount_counter_cy<2>
+                                                       Mcount_counter_cy<3>
+    SLICE_X45Y33.CIN     net (fanout=1)        0.000   Mcount_counter_cy<3>
+    SLICE_X45Y33.COUT    Tbyp                  0.118   counter<4>
+                                                       Mcount_counter_cy<4>
+                                                       Mcount_counter_cy<5>
+    SLICE_X45Y34.CIN     net (fanout=1)        0.000   Mcount_counter_cy<5>
+    SLICE_X45Y34.COUT    Tbyp                  0.118   counter<6>
+                                                       Mcount_counter_cy<6>
+                                                       Mcount_counter_cy<7>
+    SLICE_X45Y35.CIN     net (fanout=1)        0.000   Mcount_counter_cy<7>
+    SLICE_X45Y35.COUT    Tbyp                  0.118   counter<8>
+                                                       Mcount_counter_cy<8>
+                                                       Mcount_counter_cy<9>
+    SLICE_X45Y36.CIN     net (fanout=1)        0.000   Mcount_counter_cy<9>
+    SLICE_X45Y36.COUT    Tbyp                  0.118   counter<10>
+                                                       Mcount_counter_cy<10>
+                                                       Mcount_counter_cy<11>
+    SLICE_X45Y37.CIN     net (fanout=1)        0.000   Mcount_counter_cy<11>
+    SLICE_X45Y37.COUT    Tbyp                  0.118   counter<12>
+                                                       Mcount_counter_cy<12>
+                                                       Mcount_counter_cy<13>
+    SLICE_X45Y38.CIN     net (fanout=1)        0.000   Mcount_counter_cy<13>
+    SLICE_X45Y38.COUT    Tbyp                  0.118   counter<14>
+                                                       Mcount_counter_cy<14>
+                                                       Mcount_counter_cy<15>
+    SLICE_X45Y39.CIN     net (fanout=1)        0.000   Mcount_counter_cy<15>
+    SLICE_X45Y39.COUT    Tbyp                  0.118   counter<16>
+                                                       Mcount_counter_cy<16>
+                                                       Mcount_counter_cy<17>
+    SLICE_X45Y40.CIN     net (fanout=1)        0.000   Mcount_counter_cy<17>
+    SLICE_X45Y40.COUT    Tbyp                  0.118   counter<18>
+                                                       Mcount_counter_cy<18>
+                                                       Mcount_counter_cy<19>
+    SLICE_X45Y41.CIN     net (fanout=1)        0.000   Mcount_counter_cy<19>
+    SLICE_X45Y41.COUT    Tbyp                  0.118   counter<20>
+                                                       Mcount_counter_cy<20>
+                                                       Mcount_counter_cy<21>
+    SLICE_X45Y42.CIN     net (fanout=1)        0.000   Mcount_counter_cy<21>
+    SLICE_X45Y42.COUT    Tbyp                  0.118   counter<22>
+                                                       Mcount_counter_cy<22>
+                                                       Mcount_counter_cy<23>
+    SLICE_X45Y43.CIN     net (fanout=1)        0.000   Mcount_counter_cy<23>
+    SLICE_X45Y43.COUT    Tbyp                  0.118   counter<24>
+                                                       Mcount_counter_cy<24>
+                                                       Mcount_counter_cy<25>
+    SLICE_X45Y44.CIN     net (fanout=1)        0.000   Mcount_counter_cy<25>
+    SLICE_X45Y44.COUT    Tbyp                  0.118   counter<26>
+                                                       Mcount_counter_cy<26>
+                                                       Mcount_counter_cy<27>
+    SLICE_X45Y45.CIN     net (fanout=1)        0.000   Mcount_counter_cy<27>
+    SLICE_X45Y45.COUT    Tbyp                  0.118   counter<28>
+                                                       Mcount_counter_cy<28>
+                                                       Mcount_counter_cy<29>
+    SLICE_X45Y46.CIN     net (fanout=1)        0.000   Mcount_counter_cy<29>
+    SLICE_X45Y46.COUT    Tbyp                  0.118   counter<30>
+                                                       Mcount_counter_cy<30>
+                                                       Mcount_counter_cy<31>
+    SLICE_X45Y47.CIN     net (fanout=1)        0.000   Mcount_counter_cy<31>
+    SLICE_X45Y47.CLK     Tcinck                1.002   counter<32>
+                                                       Mcount_counter_cy<32>
+                                                       Mcount_counter_xor<33>
+                                                       counter_33
+    -------------------------------------------------  ---------------------------
+    Total                                      4.986ns (4.525ns logic, 0.461ns route)
+                                                       (90.8% logic, 9.2% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     26.357ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               counter_1 (FF)
+  Destination:          counter_33 (FF)
+  Requirement:          31.250ns
+  Data Path Delay:      4.893ns (Levels of Logic = 17)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 31.250ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: counter_1 to counter_33
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X45Y31.YQ      Tcko                  0.587   counter<0>
+                                                       counter_1
+    SLICE_X45Y31.G1      net (fanout=1)        0.533   counter<1>
+    SLICE_X45Y31.COUT    Topcyg                1.001   counter<0>
+                                                       counter<1>_rt
+                                                       Mcount_counter_cy<1>
+    SLICE_X45Y32.CIN     net (fanout=1)        0.000   Mcount_counter_cy<1>
+    SLICE_X45Y32.COUT    Tbyp                  0.118   counter<2>
+                                                       Mcount_counter_cy<2>
+                                                       Mcount_counter_cy<3>
+    SLICE_X45Y33.CIN     net (fanout=1)        0.000   Mcount_counter_cy<3>
+    SLICE_X45Y33.COUT    Tbyp                  0.118   counter<4>
+                                                       Mcount_counter_cy<4>
+                                                       Mcount_counter_cy<5>
+    SLICE_X45Y34.CIN     net (fanout=1)        0.000   Mcount_counter_cy<5>
+    SLICE_X45Y34.COUT    Tbyp                  0.118   counter<6>
+                                                       Mcount_counter_cy<6>
+                                                       Mcount_counter_cy<7>
+    SLICE_X45Y35.CIN     net (fanout=1)        0.000   Mcount_counter_cy<7>
+    SLICE_X45Y35.COUT    Tbyp                  0.118   counter<8>
+                                                       Mcount_counter_cy<8>
+                                                       Mcount_counter_cy<9>
+    SLICE_X45Y36.CIN     net (fanout=1)        0.000   Mcount_counter_cy<9>
+    SLICE_X45Y36.COUT    Tbyp                  0.118   counter<10>
+                                                       Mcount_counter_cy<10>
+                                                       Mcount_counter_cy<11>
+    SLICE_X45Y37.CIN     net (fanout=1)        0.000   Mcount_counter_cy<11>
+    SLICE_X45Y37.COUT    Tbyp                  0.118   counter<12>
+                                                       Mcount_counter_cy<12>
+                                                       Mcount_counter_cy<13>
+    SLICE_X45Y38.CIN     net (fanout=1)        0.000   Mcount_counter_cy<13>
+    SLICE_X45Y38.COUT    Tbyp                  0.118   counter<14>
+                                                       Mcount_counter_cy<14>
+                                                       Mcount_counter_cy<15>
+    SLICE_X45Y39.CIN     net (fanout=1)        0.000   Mcount_counter_cy<15>
+    SLICE_X45Y39.COUT    Tbyp                  0.118   counter<16>
+                                                       Mcount_counter_cy<16>
+                                                       Mcount_counter_cy<17>
+    SLICE_X45Y40.CIN     net (fanout=1)        0.000   Mcount_counter_cy<17>
+    SLICE_X45Y40.COUT    Tbyp                  0.118   counter<18>
+                                                       Mcount_counter_cy<18>
+                                                       Mcount_counter_cy<19>
+    SLICE_X45Y41.CIN     net (fanout=1)        0.000   Mcount_counter_cy<19>
+    SLICE_X45Y41.COUT    Tbyp                  0.118   counter<20>
+                                                       Mcount_counter_cy<20>
+                                                       Mcount_counter_cy<21>
+    SLICE_X45Y42.CIN     net (fanout=1)        0.000   Mcount_counter_cy<21>
+    SLICE_X45Y42.COUT    Tbyp                  0.118   counter<22>
+                                                       Mcount_counter_cy<22>
+                                                       Mcount_counter_cy<23>
+    SLICE_X45Y43.CIN     net (fanout=1)        0.000   Mcount_counter_cy<23>
+    SLICE_X45Y43.COUT    Tbyp                  0.118   counter<24>
+                                                       Mcount_counter_cy<24>
+                                                       Mcount_counter_cy<25>
+    SLICE_X45Y44.CIN     net (fanout=1)        0.000   Mcount_counter_cy<25>
+    SLICE_X45Y44.COUT    Tbyp                  0.118   counter<26>
+                                                       Mcount_counter_cy<26>
+                                                       Mcount_counter_cy<27>
+    SLICE_X45Y45.CIN     net (fanout=1)        0.000   Mcount_counter_cy<27>
+    SLICE_X45Y45.COUT    Tbyp                  0.118   counter<28>
+                                                       Mcount_counter_cy<28>
+                                                       Mcount_counter_cy<29>
+    SLICE_X45Y46.CIN     net (fanout=1)        0.000   Mcount_counter_cy<29>
+    SLICE_X45Y46.COUT    Tbyp                  0.118   counter<30>
+                                                       Mcount_counter_cy<30>
+                                                       Mcount_counter_cy<31>
+    SLICE_X45Y47.CIN     net (fanout=1)        0.000   Mcount_counter_cy<31>
+    SLICE_X45Y47.CLK     Tcinck                1.002   counter<32>
+                                                       Mcount_counter_cy<32>
+                                                       Mcount_counter_xor<33>
+                                                       counter_33
+    -------------------------------------------------  ---------------------------
+    Total                                      4.893ns (4.360ns logic, 0.533ns route)
+                                                       (89.1% logic, 10.9% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     26.460ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               counter_2 (FF)
+  Destination:          counter_33 (FF)
+  Requirement:          31.250ns
+  Data Path Delay:      4.790ns (Levels of Logic = 16)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 31.250ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: counter_2 to counter_33
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X45Y32.XQ      Tcko                  0.591   counter<2>
+                                                       counter_2
+    SLICE_X45Y32.F3      net (fanout=1)        0.383   counter<2>
+    SLICE_X45Y32.COUT    Topcyf                1.162   counter<2>
+                                                       counter<2>_rt
+                                                       Mcount_counter_cy<2>
+                                                       Mcount_counter_cy<3>
+    SLICE_X45Y33.CIN     net (fanout=1)        0.000   Mcount_counter_cy<3>
+    SLICE_X45Y33.COUT    Tbyp                  0.118   counter<4>
+                                                       Mcount_counter_cy<4>
+                                                       Mcount_counter_cy<5>
+    SLICE_X45Y34.CIN     net (fanout=1)        0.000   Mcount_counter_cy<5>
+    SLICE_X45Y34.COUT    Tbyp                  0.118   counter<6>
+                                                       Mcount_counter_cy<6>
+                                                       Mcount_counter_cy<7>
+    SLICE_X45Y35.CIN     net (fanout=1)        0.000   Mcount_counter_cy<7>
+    SLICE_X45Y35.COUT    Tbyp                  0.118   counter<8>
+                                                       Mcount_counter_cy<8>
+                                                       Mcount_counter_cy<9>
+    SLICE_X45Y36.CIN     net (fanout=1)        0.000   Mcount_counter_cy<9>
+    SLICE_X45Y36.COUT    Tbyp                  0.118   counter<10>
+                                                       Mcount_counter_cy<10>
+                                                       Mcount_counter_cy<11>
+    SLICE_X45Y37.CIN     net (fanout=1)        0.000   Mcount_counter_cy<11>
+    SLICE_X45Y37.COUT    Tbyp                  0.118   counter<12>
+                                                       Mcount_counter_cy<12>
+                                                       Mcount_counter_cy<13>
+    SLICE_X45Y38.CIN     net (fanout=1)        0.000   Mcount_counter_cy<13>
+    SLICE_X45Y38.COUT    Tbyp                  0.118   counter<14>
+                                                       Mcount_counter_cy<14>
+                                                       Mcount_counter_cy<15>
+    SLICE_X45Y39.CIN     net (fanout=1)        0.000   Mcount_counter_cy<15>
+    SLICE_X45Y39.COUT    Tbyp                  0.118   counter<16>
+                                                       Mcount_counter_cy<16>
+                                                       Mcount_counter_cy<17>
+    SLICE_X45Y40.CIN     net (fanout=1)        0.000   Mcount_counter_cy<17>
+    SLICE_X45Y40.COUT    Tbyp                  0.118   counter<18>
+                                                       Mcount_counter_cy<18>
+                                                       Mcount_counter_cy<19>
+    SLICE_X45Y41.CIN     net (fanout=1)        0.000   Mcount_counter_cy<19>
+    SLICE_X45Y41.COUT    Tbyp                  0.118   counter<20>
+                                                       Mcount_counter_cy<20>
+                                                       Mcount_counter_cy<21>
+    SLICE_X45Y42.CIN     net (fanout=1)        0.000   Mcount_counter_cy<21>
+    SLICE_X45Y42.COUT    Tbyp                  0.118   counter<22>
+                                                       Mcount_counter_cy<22>
+                                                       Mcount_counter_cy<23>
+    SLICE_X45Y43.CIN     net (fanout=1)        0.000   Mcount_counter_cy<23>
+    SLICE_X45Y43.COUT    Tbyp                  0.118   counter<24>
+                                                       Mcount_counter_cy<24>
+                                                       Mcount_counter_cy<25>
+    SLICE_X45Y44.CIN     net (fanout=1)        0.000   Mcount_counter_cy<25>
+    SLICE_X45Y44.COUT    Tbyp                  0.118   counter<26>
+                                                       Mcount_counter_cy<26>
+                                                       Mcount_counter_cy<27>
+    SLICE_X45Y45.CIN     net (fanout=1)        0.000   Mcount_counter_cy<27>
+    SLICE_X45Y45.COUT    Tbyp                  0.118   counter<28>
+                                                       Mcount_counter_cy<28>
+                                                       Mcount_counter_cy<29>
+    SLICE_X45Y46.CIN     net (fanout=1)        0.000   Mcount_counter_cy<29>
+    SLICE_X45Y46.COUT    Tbyp                  0.118   counter<30>
+                                                       Mcount_counter_cy<30>
+                                                       Mcount_counter_cy<31>
+    SLICE_X45Y47.CIN     net (fanout=1)        0.000   Mcount_counter_cy<31>
+    SLICE_X45Y47.CLK     Tcinck                1.002   counter<32>
+                                                       Mcount_counter_cy<32>
+                                                       Mcount_counter_xor<33>
+                                                       counter_33
+    -------------------------------------------------  ---------------------------
+    Total                                      4.790ns (4.407ns logic, 0.383ns route)
+                                                       (92.0% logic, 8.0% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point counter_31 (SLICE_X45Y46.CIN), 30 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     26.382ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               counter_0 (FF)
+  Destination:          counter_31 (FF)
+  Requirement:          31.250ns
+  Data Path Delay:      4.868ns (Levels of Logic = 16)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 31.250ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: counter_0 to counter_31
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X45Y31.XQ      Tcko                  0.591   counter<0>
+                                                       counter_0
+    SLICE_X45Y31.F2      net (fanout=1)        0.461   counter<0>
+    SLICE_X45Y31.COUT    Topcyf                1.162   counter<0>
+                                                       Mcount_counter_lut<0>_INV_0
+                                                       Mcount_counter_cy<0>
+                                                       Mcount_counter_cy<1>
+    SLICE_X45Y32.CIN     net (fanout=1)        0.000   Mcount_counter_cy<1>
+    SLICE_X45Y32.COUT    Tbyp                  0.118   counter<2>
+                                                       Mcount_counter_cy<2>
+                                                       Mcount_counter_cy<3>
+    SLICE_X45Y33.CIN     net (fanout=1)        0.000   Mcount_counter_cy<3>
+    SLICE_X45Y33.COUT    Tbyp                  0.118   counter<4>
+                                                       Mcount_counter_cy<4>
+                                                       Mcount_counter_cy<5>
+    SLICE_X45Y34.CIN     net (fanout=1)        0.000   Mcount_counter_cy<5>
+    SLICE_X45Y34.COUT    Tbyp                  0.118   counter<6>
+                                                       Mcount_counter_cy<6>
+                                                       Mcount_counter_cy<7>
+    SLICE_X45Y35.CIN     net (fanout=1)        0.000   Mcount_counter_cy<7>
+    SLICE_X45Y35.COUT    Tbyp                  0.118   counter<8>
+                                                       Mcount_counter_cy<8>
+                                                       Mcount_counter_cy<9>
+    SLICE_X45Y36.CIN     net (fanout=1)        0.000   Mcount_counter_cy<9>
+    SLICE_X45Y36.COUT    Tbyp                  0.118   counter<10>
+                                                       Mcount_counter_cy<10>
+                                                       Mcount_counter_cy<11>
+    SLICE_X45Y37.CIN     net (fanout=1)        0.000   Mcount_counter_cy<11>
+    SLICE_X45Y37.COUT    Tbyp                  0.118   counter<12>
+                                                       Mcount_counter_cy<12>
+                                                       Mcount_counter_cy<13>
+    SLICE_X45Y38.CIN     net (fanout=1)        0.000   Mcount_counter_cy<13>
+    SLICE_X45Y38.COUT    Tbyp                  0.118   counter<14>
+                                                       Mcount_counter_cy<14>
+                                                       Mcount_counter_cy<15>
+    SLICE_X45Y39.CIN     net (fanout=1)        0.000   Mcount_counter_cy<15>
+    SLICE_X45Y39.COUT    Tbyp                  0.118   counter<16>
+                                                       Mcount_counter_cy<16>
+                                                       Mcount_counter_cy<17>
+    SLICE_X45Y40.CIN     net (fanout=1)        0.000   Mcount_counter_cy<17>
+    SLICE_X45Y40.COUT    Tbyp                  0.118   counter<18>
+                                                       Mcount_counter_cy<18>
+                                                       Mcount_counter_cy<19>
+    SLICE_X45Y41.CIN     net (fanout=1)        0.000   Mcount_counter_cy<19>
+    SLICE_X45Y41.COUT    Tbyp                  0.118   counter<20>
+                                                       Mcount_counter_cy<20>
+                                                       Mcount_counter_cy<21>
+    SLICE_X45Y42.CIN     net (fanout=1)        0.000   Mcount_counter_cy<21>
+    SLICE_X45Y42.COUT    Tbyp                  0.118   counter<22>
+                                                       Mcount_counter_cy<22>
+                                                       Mcount_counter_cy<23>
+    SLICE_X45Y43.CIN     net (fanout=1)        0.000   Mcount_counter_cy<23>
+    SLICE_X45Y43.COUT    Tbyp                  0.118   counter<24>
+                                                       Mcount_counter_cy<24>
+                                                       Mcount_counter_cy<25>
+    SLICE_X45Y44.CIN     net (fanout=1)        0.000   Mcount_counter_cy<25>
+    SLICE_X45Y44.COUT    Tbyp                  0.118   counter<26>
+                                                       Mcount_counter_cy<26>
+                                                       Mcount_counter_cy<27>
+    SLICE_X45Y45.CIN     net (fanout=1)        0.000   Mcount_counter_cy<27>
+    SLICE_X45Y45.COUT    Tbyp                  0.118   counter<28>
+                                                       Mcount_counter_cy<28>
+                                                       Mcount_counter_cy<29>
+    SLICE_X45Y46.CIN     net (fanout=1)        0.000   Mcount_counter_cy<29>
+    SLICE_X45Y46.CLK     Tcinck                1.002   counter<30>
+                                                       Mcount_counter_cy<30>
+                                                       Mcount_counter_xor<31>
+                                                       counter_31
+    -------------------------------------------------  ---------------------------
+    Total                                      4.868ns (4.407ns logic, 0.461ns route)
+                                                       (90.5% logic, 9.5% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     26.475ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               counter_1 (FF)
+  Destination:          counter_31 (FF)
+  Requirement:          31.250ns
+  Data Path Delay:      4.775ns (Levels of Logic = 16)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 31.250ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: counter_1 to counter_31
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X45Y31.YQ      Tcko                  0.587   counter<0>
+                                                       counter_1
+    SLICE_X45Y31.G1      net (fanout=1)        0.533   counter<1>
+    SLICE_X45Y31.COUT    Topcyg                1.001   counter<0>
+                                                       counter<1>_rt
+                                                       Mcount_counter_cy<1>
+    SLICE_X45Y32.CIN     net (fanout=1)        0.000   Mcount_counter_cy<1>
+    SLICE_X45Y32.COUT    Tbyp                  0.118   counter<2>
+                                                       Mcount_counter_cy<2>
+                                                       Mcount_counter_cy<3>
+    SLICE_X45Y33.CIN     net (fanout=1)        0.000   Mcount_counter_cy<3>
+    SLICE_X45Y33.COUT    Tbyp                  0.118   counter<4>
+                                                       Mcount_counter_cy<4>
+                                                       Mcount_counter_cy<5>
+    SLICE_X45Y34.CIN     net (fanout=1)        0.000   Mcount_counter_cy<5>
+    SLICE_X45Y34.COUT    Tbyp                  0.118   counter<6>
+                                                       Mcount_counter_cy<6>
+                                                       Mcount_counter_cy<7>
+    SLICE_X45Y35.CIN     net (fanout=1)        0.000   Mcount_counter_cy<7>
+    SLICE_X45Y35.COUT    Tbyp                  0.118   counter<8>
+                                                       Mcount_counter_cy<8>
+                                                       Mcount_counter_cy<9>
+    SLICE_X45Y36.CIN     net (fanout=1)        0.000   Mcount_counter_cy<9>
+    SLICE_X45Y36.COUT    Tbyp                  0.118   counter<10>
+                                                       Mcount_counter_cy<10>
+                                                       Mcount_counter_cy<11>
+    SLICE_X45Y37.CIN     net (fanout=1)        0.000   Mcount_counter_cy<11>
+    SLICE_X45Y37.COUT    Tbyp                  0.118   counter<12>
+                                                       Mcount_counter_cy<12>
+                                                       Mcount_counter_cy<13>
+    SLICE_X45Y38.CIN     net (fanout=1)        0.000   Mcount_counter_cy<13>
+    SLICE_X45Y38.COUT    Tbyp                  0.118   counter<14>
+                                                       Mcount_counter_cy<14>
+                                                       Mcount_counter_cy<15>
+    SLICE_X45Y39.CIN     net (fanout=1)        0.000   Mcount_counter_cy<15>
+    SLICE_X45Y39.COUT    Tbyp                  0.118   counter<16>
+                                                       Mcount_counter_cy<16>
+                                                       Mcount_counter_cy<17>
+    SLICE_X45Y40.CIN     net (fanout=1)        0.000   Mcount_counter_cy<17>
+    SLICE_X45Y40.COUT    Tbyp                  0.118   counter<18>
+                                                       Mcount_counter_cy<18>
+                                                       Mcount_counter_cy<19>
+    SLICE_X45Y41.CIN     net (fanout=1)        0.000   Mcount_counter_cy<19>
+    SLICE_X45Y41.COUT    Tbyp                  0.118   counter<20>
+                                                       Mcount_counter_cy<20>
+                                                       Mcount_counter_cy<21>
+    SLICE_X45Y42.CIN     net (fanout=1)        0.000   Mcount_counter_cy<21>
+    SLICE_X45Y42.COUT    Tbyp                  0.118   counter<22>
+                                                       Mcount_counter_cy<22>
+                                                       Mcount_counter_cy<23>
+    SLICE_X45Y43.CIN     net (fanout=1)        0.000   Mcount_counter_cy<23>
+    SLICE_X45Y43.COUT    Tbyp                  0.118   counter<24>
+                                                       Mcount_counter_cy<24>
+                                                       Mcount_counter_cy<25>
+    SLICE_X45Y44.CIN     net (fanout=1)        0.000   Mcount_counter_cy<25>
+    SLICE_X45Y44.COUT    Tbyp                  0.118   counter<26>
+                                                       Mcount_counter_cy<26>
+                                                       Mcount_counter_cy<27>
+    SLICE_X45Y45.CIN     net (fanout=1)        0.000   Mcount_counter_cy<27>
+    SLICE_X45Y45.COUT    Tbyp                  0.118   counter<28>
+                                                       Mcount_counter_cy<28>
+                                                       Mcount_counter_cy<29>
+    SLICE_X45Y46.CIN     net (fanout=1)        0.000   Mcount_counter_cy<29>
+    SLICE_X45Y46.CLK     Tcinck                1.002   counter<30>
+                                                       Mcount_counter_cy<30>
+                                                       Mcount_counter_xor<31>
+                                                       counter_31
+    -------------------------------------------------  ---------------------------
+    Total                                      4.775ns (4.242ns logic, 0.533ns route)
+                                                       (88.8% logic, 11.2% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     26.578ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               counter_2 (FF)
+  Destination:          counter_31 (FF)
+  Requirement:          31.250ns
+  Data Path Delay:      4.672ns (Levels of Logic = 15)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 0.000ns
+  Destination Clock:    clk_BUFGP rising at 31.250ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: counter_2 to counter_31
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X45Y32.XQ      Tcko                  0.591   counter<2>
+                                                       counter_2
+    SLICE_X45Y32.F3      net (fanout=1)        0.383   counter<2>
+    SLICE_X45Y32.COUT    Topcyf                1.162   counter<2>
+                                                       counter<2>_rt
+                                                       Mcount_counter_cy<2>
+                                                       Mcount_counter_cy<3>
+    SLICE_X45Y33.CIN     net (fanout=1)        0.000   Mcount_counter_cy<3>
+    SLICE_X45Y33.COUT    Tbyp                  0.118   counter<4>
+                                                       Mcount_counter_cy<4>
+                                                       Mcount_counter_cy<5>
+    SLICE_X45Y34.CIN     net (fanout=1)        0.000   Mcount_counter_cy<5>
+    SLICE_X45Y34.COUT    Tbyp                  0.118   counter<6>
+                                                       Mcount_counter_cy<6>
+                                                       Mcount_counter_cy<7>
+    SLICE_X45Y35.CIN     net (fanout=1)        0.000   Mcount_counter_cy<7>
+    SLICE_X45Y35.COUT    Tbyp                  0.118   counter<8>
+                                                       Mcount_counter_cy<8>
+                                                       Mcount_counter_cy<9>
+    SLICE_X45Y36.CIN     net (fanout=1)        0.000   Mcount_counter_cy<9>
+    SLICE_X45Y36.COUT    Tbyp                  0.118   counter<10>
+                                                       Mcount_counter_cy<10>
+                                                       Mcount_counter_cy<11>
+    SLICE_X45Y37.CIN     net (fanout=1)        0.000   Mcount_counter_cy<11>
+    SLICE_X45Y37.COUT    Tbyp                  0.118   counter<12>
+                                                       Mcount_counter_cy<12>
+                                                       Mcount_counter_cy<13>
+    SLICE_X45Y38.CIN     net (fanout=1)        0.000   Mcount_counter_cy<13>
+    SLICE_X45Y38.COUT    Tbyp                  0.118   counter<14>
+                                                       Mcount_counter_cy<14>
+                                                       Mcount_counter_cy<15>
+    SLICE_X45Y39.CIN     net (fanout=1)        0.000   Mcount_counter_cy<15>
+    SLICE_X45Y39.COUT    Tbyp                  0.118   counter<16>
+                                                       Mcount_counter_cy<16>
+                                                       Mcount_counter_cy<17>
+    SLICE_X45Y40.CIN     net (fanout=1)        0.000   Mcount_counter_cy<17>
+    SLICE_X45Y40.COUT    Tbyp                  0.118   counter<18>
+                                                       Mcount_counter_cy<18>
+                                                       Mcount_counter_cy<19>
+    SLICE_X45Y41.CIN     net (fanout=1)        0.000   Mcount_counter_cy<19>
+    SLICE_X45Y41.COUT    Tbyp                  0.118   counter<20>
+                                                       Mcount_counter_cy<20>
+                                                       Mcount_counter_cy<21>
+    SLICE_X45Y42.CIN     net (fanout=1)        0.000   Mcount_counter_cy<21>
+    SLICE_X45Y42.COUT    Tbyp                  0.118   counter<22>
+                                                       Mcount_counter_cy<22>
+                                                       Mcount_counter_cy<23>
+    SLICE_X45Y43.CIN     net (fanout=1)        0.000   Mcount_counter_cy<23>
+    SLICE_X45Y43.COUT    Tbyp                  0.118   counter<24>
+                                                       Mcount_counter_cy<24>
+                                                       Mcount_counter_cy<25>
+    SLICE_X45Y44.CIN     net (fanout=1)        0.000   Mcount_counter_cy<25>
+    SLICE_X45Y44.COUT    Tbyp                  0.118   counter<26>
+                                                       Mcount_counter_cy<26>
+                                                       Mcount_counter_cy<27>
+    SLICE_X45Y45.CIN     net (fanout=1)        0.000   Mcount_counter_cy<27>
+    SLICE_X45Y45.COUT    Tbyp                  0.118   counter<28>
+                                                       Mcount_counter_cy<28>
+                                                       Mcount_counter_cy<29>
+    SLICE_X45Y46.CIN     net (fanout=1)        0.000   Mcount_counter_cy<29>
+    SLICE_X45Y46.CLK     Tcinck                1.002   counter<30>
+                                                       Mcount_counter_cy<30>
+                                                       Mcount_counter_xor<31>
+                                                       counter_31
+    -------------------------------------------------  ---------------------------
+    Total                                      4.672ns (4.289ns logic, 0.383ns route)
+                                                       (91.8% logic, 8.2% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: NET "clk_BUFGP/IBUFG" PERIOD = 31.25 ns HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point counter_4 (SLICE_X45Y33.F4), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.565ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               counter_4 (FF)
+  Destination:          counter_4 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.565ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 31.250ns
+  Destination Clock:    clk_BUFGP rising at 31.250ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: counter_4 to counter_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X45Y33.XQ      Tcko                  0.473   counter<4>
+                                                       counter_4
+    SLICE_X45Y33.F4      net (fanout=1)        0.291   counter<4>
+    SLICE_X45Y33.CLK     Tckf        (-Th)    -0.801   counter<4>
+                                                       counter<4>_rt
+                                                       Mcount_counter_xor<4>
+                                                       counter_4
+    -------------------------------------------------  ---------------------------
+    Total                                      1.565ns (1.274ns logic, 0.291ns route)
+                                                       (81.4% logic, 18.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point counter_2 (SLICE_X45Y32.F3), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.580ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               counter_2 (FF)
+  Destination:          counter_2 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.580ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 31.250ns
+  Destination Clock:    clk_BUFGP rising at 31.250ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: counter_2 to counter_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X45Y32.XQ      Tcko                  0.473   counter<2>
+                                                       counter_2
+    SLICE_X45Y32.F3      net (fanout=1)        0.306   counter<2>
+    SLICE_X45Y32.CLK     Tckf        (-Th)    -0.801   counter<2>
+                                                       counter<2>_rt
+                                                       Mcount_counter_xor<2>
+                                                       counter_2
+    -------------------------------------------------  ---------------------------
+    Total                                      1.580ns (1.274ns logic, 0.306ns route)
+                                                       (80.6% logic, 19.4% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point counter_16 (SLICE_X45Y39.F3), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      1.583ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               counter_16 (FF)
+  Destination:          counter_16 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.583ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_BUFGP rising at 31.250ns
+  Destination Clock:    clk_BUFGP rising at 31.250ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: counter_16 to counter_16
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X45Y39.XQ      Tcko                  0.473   counter<16>
+                                                       counter_16
+    SLICE_X45Y39.F3      net (fanout=2)        0.309   counter<16>
+    SLICE_X45Y39.CLK     Tckf        (-Th)    -0.801   counter<16>
+                                                       counter<16>_rt
+                                                       Mcount_counter_xor<16>
+                                                       counter_16
+    -------------------------------------------------  ---------------------------
+    Total                                      1.583ns (1.274ns logic, 0.309ns route)
+                                                       (80.5% logic, 19.5% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: NET "clk_BUFGP/IBUFG" PERIOD = 31.25 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 29.654ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 31.250ns
+  Low pulse: 15.625ns
+  Low pulse limit: 0.798ns (Tcl)
+  Physical resource: counter<0>/CLK
+  Logical resource: counter_0/CK
+  Location pin: SLICE_X45Y31.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+Slack: 29.654ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 31.250ns
+  High pulse: 15.625ns
+  High pulse limit: 0.798ns (Tch)
+  Physical resource: counter<0>/CLK
+  Logical resource: counter_0/CK
+  Location pin: SLICE_X45Y31.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+Slack: 29.654ns (period - min period limit)
+  Period: 31.250ns
+  Min period limit: 1.596ns (626.566MHz) (Tcp)
+  Physical resource: counter<0>/CLK
+  Logical resource: counter_0/CK
+  Location pin: SLICE_X45Y31.CLK
+  Clock network: clk_BUFGP
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    5.104|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 666 paths, 0 nets, and 72 connections
+
+Design statistics:
+   Minimum period:   5.104ns{1}   (Maximum frequency: 195.925MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Sun May  7 15:52:30 2017 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 354 MB
+
+
+

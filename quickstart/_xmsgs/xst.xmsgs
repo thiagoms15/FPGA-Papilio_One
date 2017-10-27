@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">counter_36</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">quickstart</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">counter_37</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">quickstart</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">counter_38</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">quickstart</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">counter_39</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">quickstart</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">counter_40</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">quickstart</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">counter_41</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">quickstart</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">counter_42</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">quickstart</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">counter_43</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">quickstart</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">counter_44</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">quickstart</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">counter_45</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">quickstart</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">counter_46</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">quickstart</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="old" >Node &lt;<arg fmt="%s" index="1">counter_47</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">quickstart</arg>&gt;.
+</msg>
+
+</messages>
+
